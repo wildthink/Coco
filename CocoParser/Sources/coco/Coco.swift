@@ -41,9 +41,10 @@
     $ { digit | letter }
     in the attributed grammar or as a command-line option
 -------------------------------------------------------------------------*/
-
+#if canImport(ArgumentParser)
 import Foundation
 import ArgumentParser
+import CocoParser
 
 struct Coco : ParsableCommand {
     
@@ -169,3 +170,4 @@ struct Coco : ParsableCommand {
     }
     
 } // end Coco
+#endif
